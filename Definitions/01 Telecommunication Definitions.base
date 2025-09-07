@@ -1,0 +1,107 @@
+filters:
+  and:
+    - file.hasTag("telecommunications/definitions")
+views:
+  - type: table
+    name: ALL
+    order:
+      - file.name
+      - aliases
+    columnSize:
+      file.name: 505
+  - type: table
+    name: Application Layer Protocols
+    filters:
+      and:
+        - file.hasTag("telecommunications/definitions/application-layer-protocols")
+    order:
+      - file.name
+      - aliases
+  - type: table
+    name: Control, Label Switching & Management
+    filters:
+      and:
+        - file.hasTag("telecommunications/definitions/control-label-switching-and-management")
+    order:
+      - file.name
+      - aliases
+  - type: table
+    name: Mutiplexing & Modulation
+    filters:
+      and:
+        - file.hasTag("telecommunications/definitions/multiplexing-and-modulation")
+    order:
+      - file.name
+      - aliases
+  - type: table
+    name: Network Protocols
+    filters:
+      and:
+        - file.hasTag("telecommunications/definitions/network-protocols")
+    order:
+      - file.name
+      - aliases
+  - type: table
+    name: Network Technologies & Concepts
+    filters:
+      and:
+        - file.hasTag("telecommunications/definitions/network-tech-and-concepts")
+    order:
+      - file.name
+      - aliases
+  - type: table
+    name: Optical Network & Components
+    filters:
+      and:
+        - file.hasTag("telecommunications/definitions/optical-network-and-components")
+    order:
+      - file.name
+      - aliases
+  - type: table
+    name: Radio Protocols
+    filters:
+      and:
+        - file.hasTag("telecommunications/definitions/radio-protocols")
+    order:
+      - file.name
+      - aliases
+  - type: table
+    name: RAN Architectures & Components
+    filters:
+      and:
+        - file.hasTag("telecommunications/definitions/ran-architectures-and-components")
+    order:
+      - file.name
+      - aliases
+  - type: table
+    name: Routing, Muilticast & Gateway Protocols
+    filters:
+      and:
+        - file.hasTag("telecommunications/definitions/routing-multicast-gateway-protocols")
+    order:
+      - file.name
+      - aliases
+  - type: table
+    name: Security & Authentication
+    filters:
+      and:
+        - file.hasTag("telecommunications/definitions/security-and-authentication")
+    order:
+      - file.name
+      - aliases
+  - type: table
+    name: Standardisation & Organisations
+    filters:
+      and:
+        - file.hasTag("telecommunications/definitions/standardisation-and-organisations")
+    order:
+      - file.name
+      - aliases
+  - type: table
+    name: Wireless Technologies
+    filters:
+      and:
+        - file.hasTag("telecommunications/definitions/wireless-technologies")
+    order:
+      - file.name
+      - aliases
